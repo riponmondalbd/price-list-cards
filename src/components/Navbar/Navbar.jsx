@@ -15,13 +15,21 @@ const Navbar = () => {
     ];
 
     return (
-        <nav>
-            <div onClick={() => setOpen(!open)}>
-                <span>{open == true ? 'open' : 'close'}</span>
-                <Bars3Icon className="h-6 w-6 text-purple-500" />
+        <nav className='bg-purple-400'>
+            <div onClick={() => setOpen(!open)} className='md:hidden'>
+                <span>
+                    {
+                        open === true ?
+                            <XMarkIcon className='h-6 w-6 text-purple-500' />
+                            :
+                            <Bars3Icon className="h-6 w-6 text-purple-500" />
+                    }
+                </span>
+
+
             </div>
 
-            <ul className='md:flex'>
+            <ul className={`md:flex absolute md:static duration-500 pl-8 pb-4 py-2 bg-purple-400 ${open ? 'top-6' : '-top-36'}`}>
                 {
                     routes.map(route => <Link
                         key={route.id}
