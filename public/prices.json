@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "membershipName": "Basic",
+        "price": 2999,
+        "features": [
+            "Cardio access",
+            "Basic classes"
+        ]
+    },
+    {
+        "id": 2,
+        "membershipName": "Standard",
+        "price": 4999,
+        "features": [
+            "Cardio and weights access",
+            "Full fitness classes"
+        ]
+    },
+    {
+        "id": 3,
+        "membershipName": "Premium",
+        "price": 7999,
+        "features": [
+            "Unlimited facility access",
+            "Personalized training",
+            "Premium classes"
+        ]
+    }
+]
