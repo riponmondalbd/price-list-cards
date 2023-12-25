@@ -22,7 +22,7 @@ const Dashboard = () => {
     return (
         <div>
             <LineChart
-                width={600}
+                width={1000}
                 height={300}
                 data={marksArray}
             >
